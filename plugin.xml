@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.bank.privacyscreen"
+        version="1.0.0">
+
+    <name>PrivacyScreenPlugin</name>
+
+    <description>
+        Privacy Screen Plugin
+    </description>
+
+    <license>MIT</license>
+
+    <js-module src="www/PrivacyScreenPlugin.js"
+               name="PrivacyScreenPlugin">
+
+        <clobbers target="cordova.plugins.privacyscreen"/>
+
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="config.xml"
+                     parent="/*">
+
+            <feature name="PrivacyScreenPlugin">
+
+                <param name="android-package"
+                       value="com.bank.privacyscreen.PrivacyScreenPlugin"/>
+
+            </feature>
+
+        </config-file>
+
+        <source-file
+            src="src/android/PrivacyScreenPlugin.java"
+            target-dir="src/com/bank/privacyscreen"/>
+
+    </platform>
+
+    <platform name="ios">
+
+        <config-file target="config.xml"
+                     parent="/*">
+
+            <feature name="PrivacyScreenPlugin">
+
+                <param name="ios-package"
+                       value="PrivacyScreenPlugin"/>
+
+            </feature>
+
+        </config-file>
+
+        <header-file src="src/ios/PrivacyScreenPlugin.h"/>
+
+        <source-file src="src/ios/PrivacyScreenPlugin.m"/>
+
+    </platform>
+
+</plugin>

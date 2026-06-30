@@ -1,0 +1,12 @@
+{
+    "name": "com.bank.privacyscreen",
+    "version": "1.0.0",
+    "description": "Privacy Screen Plugin for OutSystems",
+    "cordova": {
+        "id": "com.bank.privacyscreen",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}
