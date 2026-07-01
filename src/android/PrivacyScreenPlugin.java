@@ -1,4 +1,4 @@
-package org.devgeeks.privacyscreen;
+package com.bank.privacyscreen;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
