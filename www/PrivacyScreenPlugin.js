@@ -1,24 +1,18 @@
-var exec = require('cordova/exec');
-
 module.exports = {
 
     enable: function(success, error) {
 
-        exec(success,
-             error,
-             "PrivacyScreenPlugin",
-             "enable",
-             []);
+        if (typeof success === "function") {
+            success();
+        }
 
     },
 
     disable: function(success, error) {
 
-        exec(success,
-             error,
-             "PrivacyScreenPlugin",
-             "disable",
-             []);
+        if (typeof success === "function") {
+            success();
+        }
 
     }
 
